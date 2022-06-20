@@ -43,6 +43,7 @@ while lives != 0 and won == FALSE:
     if won == FALSE:
         for char in range(len(word)):
             print(word[char], end=" ")
+        print("")
     if won == TRUE:
         print(word_to_find)
         print("You won! Congratulations")
