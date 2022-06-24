@@ -5,9 +5,9 @@ fname = input("Enter a file name: ")
 fhand = open(fname)
 wordList = list()
 for word in fhand:
+    word = word.rstrip()
     if word.isalpha() == True:
-        continue
-    wordList.append(word)
+        wordList.append(word)
 
 word_to_find = random.choice(wordList)
 print(word_to_find)
